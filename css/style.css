@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    background-image: url(../assets/read_news.jpg);
+    background-size: 70%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+}
+
+#container {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+#logo {
+    width: 389px;
+    height: 94px;
+    margin: 50px 0 0 30px;
+}
+
+#main-text {
+    margin: 92px 37px 0 36px;
+    max-width: 647px;
+    height: 102px;
+}
+
+#main-text h1 {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#subtitle {
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+#about {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#email-box {
+    margin: 50px 0 0 36px;
+    height: 84px;
+}
+
+label {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--form-color);
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#emailinput {
+    display: flex;
+    position: absolute;
+}
+
+#email-form {
+    height: 48px;
+    width: 700px;
+    outline: 0;
+    border: 0;
+    border-left: 5px solid var(--title-color);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    padding: 5px;
+}
+
+button {
+    width: 48px;
+    background-color: var(--bg-button-color);
+    padding: 12px 12px 8px;
+    transition: .1s ease-in-out;
+    border: none;
+}
+
+button:hover {
+    background-color: #7348d8;
+    box-shadow: 0 2px 0 #43248a;
+    cursor: pointer;
+}
+
+button:active {
+    margin-top: 2px;
+    box-shadow: none;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateX(0);
+    } 50% {
+        transform: translateX(10px);
+    } 100% {
+        transform: translateX(0);
+    }
+}
+
+footer {
+    margin: 50px 0 0 36px;
+    display: flex;
+    max-width: max-content;
+    color: var(--bg-button-color);
+    position: relative;
+    overflow: hidden;
+}
+
+footer:hover {
+    cursor: pointer;
+}
+
+footer::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--bg-button-color);
+    position: absolute;
+    bottom: 0;
+    transition: .2s ease-in-out;
+}
+
+footer:hover::after {
+    width: 100%;
+}
+
+#readFirst {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
