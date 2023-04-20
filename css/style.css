@@ -111,16 +111,6 @@ button:active {
     box-shadow: none;
 }
 
-@keyframes arrow {
-    0% {
-        transform: translateX(0);
-    } 50% {
-        transform: translateX(10px);
-    } 100% {
-        transform: translateX(0);
-    }
-}
-
 footer {
     margin: 50px 0 0 36px;
     display: flex;
