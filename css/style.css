@@ -95,7 +95,9 @@ label {
 button {
     width: 48px;
     background-color: var(--bg-button-color);
-    padding: 12px 12px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: .1s ease-in-out;
     border: none;
 }
